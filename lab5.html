@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahkir Alkozai's Education</title>
+
+    <style>
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            background-color: #e6e6fa;
+            color: #4d3261;
+            margin: 15px;
+        }
+
+        /* Navigation menu */
+        nav {
+            background-color: #532d53; /* Background color for the nav */
+            padding: 10px; /* Padding around the nav */
+            text-align: center; /* Center align the menu */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 20px; /* Space below the nav */
+        }
+        nav ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        nav ul li {
+            display: inline-block; /* Inline-block for spacing */
+            margin-right: 20px; /* Space between items */
+            position: relative; /* Position relative for dropdown */
+        }
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #ffffff; /* White text color */
+            font-weight: bold; /* Bold text */
+            padding: 5px 10px; /* Padding for better click area */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        nav ul li a:hover {
+            background-color: #7a2d9f; /* Change background color on hover */
+            border-radius: 4px; /* Rounded corners on hover */
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none; /* Hidden by default */
+            position: absolute; /* Absolute positioning */
+            background-color: #9932cc; /* Background color for dropdown */
+            min-width: 150px; /* Minimum width */
+            z-index: 1; /* Above other content */
+            border-radius: 4px; /* Rounded corners */
+        }
+        .dropdown-content a {
+            color: white; /* Text color in dropdown */
+            padding: 10px; /* Padding for dropdown links */
+            text-decoration: none; /* Remove underline */
+            display: block; /* Block display for vertical alignment */
+        }
+        nav ul li:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 24pt;
+            color: #532d53;
+            text-align: center; /* Center the heading */
+            margin-bottom: 20px; /* Space below heading */
+        }
+        h2 {
+            font-size: 18pt;
+            color: #9932cc;
+            margin-top: 30px; /* Space above subheadings */
+        }
+        h3 {
+            font-size: 16pt;
+            color: #8a2be2;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 14pt;
+            color: #4b0082;
+        }
+
+        /* Simple table */
+        table {
+            width: 100%;
+            border: 1px solid #4b0082;
+            margin-top: 10px;
+            border-collapse: collapse; /* Collapse borders */
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #4b0082;
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #d8bfd8; /* Header background color */
+        }
+
+        /* Image styling */
+        img {
+            width: 150px;
+            cursor: pointer;
+            display: block; /* Center image below */
+            margin: 20px auto; /* Center image */
+            border-radius: 50%; /* Circular image */
+        }
+
+        /* Enlarged image class */
+        .enlarged {
+            width: 300px; /* Enlarged width */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Home</a></li>
+            <li><a href="about.html" onmouseover="highlight(this)" onmouseout="unhighlight(this)">About</a></li>
+            <li>
+                <a href="#" onmouseover="highlight(this)" onmouseout="unhighlight(this)">More</a>
+                <div class="dropdown-content">
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main heading -->
+    <h1>Shahkir Alkozai's Educational Background</h1>
+
+    <!-- Section for education -->
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Toronto Metropolitan University (TMU)</strong> — Business Technology Management, 2020–2024</li>
+        <li><strong>Leaside High School</strong> — Ontario Secondary School Diploma, 2016–2020</li>
+    </ul>
+
+    <!-- Add a prompt to input name -->
+    <button id="nameButton">Enter your name</button>
+    <p id="nameDisplay"></p>
+
+    <!-- Description of the program -->
+    <h2>Program Description</h2>
+    <p>I am studying commerce with a focus on information technology at TMU. One course that really stood out to me is ITM780.</p>
+
+    <!-- Course -->
+    <h3>ITM780: Web Design and Management</h3>
+    <p>This course was useful because I learned about designing websites and building a portfolio. It helped me learn about web development and has set me up for future success in my career.</p>
+
+    <!-- Image of myself, clickable to enlarge -->
+    <h2>About Me</h2>
+    <img id="myImage" src="https://raw.githubusercontent.com/shahkirTMU/shahkirTMU.github.io/main/snapedit_1708708187275.jpg" alt="Photo of Shahkir">
+
+    <!-- Educational Awards -->
+    <h2>Educational Awards</h2>
+    <ul>
+        <li>Dean's Honor List (2022-2023)</li>
+        <li>High School Valedictorian (2020)</li>
+    </ul>
+
+    <!-- Links organized in a table -->
+    <h2>Additional Information</h2>
+    <table>
+        <tr>
+            <th>Link</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.linkedin.com/in/shahkiralkozai" target="_blank">LinkedIn Profile</a></td>
+            <td>Find more information about my professional journey.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.tmuuav.com" target="_blank">TMU UAV Team</a></td>
+            <td>Check out my role as President of TMU UAV Team.</td>
+        </tr>
+    </table>
+
+    <!-- Extracurricular Activities -->
+    <h2>Extra-curricular Activities</h2>
+    <ul>
+        <li>President, TMU UAV Club</li>
+        <li>Volunteer Tutor, EduTutor</li>
+        <li>Member, TMU Debate Team</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
