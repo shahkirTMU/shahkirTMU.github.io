@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
+    <title>Shahkir Alkozai's Personal Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div class="container">
+        <!-- Name Input Section -->
+        <div class="name-input">
+            <input type="text" placeholder="Please enter your name!" autofocus>
+            <!-- Welcome message will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Resume.pdf" target="_blank" class="resume-link">
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </a></li>
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h1>Shahkir Alkozai's Personal Profile</h1>
+            <h2>Welcome</h2>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="profile-section">
+                <img src="me.jpg" alt="Shahkir Alkozai" class="profile-image">
+                <p class="intro-text">
+                    Hi, I'm Shahkir. I’m currently wrapping up my fifth and final year at Toronto Metropolitan University, where I’m enrolled in the Business Technology Management Co-op program. Over the course of my studies, I’ve gained a solid understanding of both business and technology, equipping me to help organizations use tech-driven solutions to solve business challenges. I am an innovative, results-oriented, and dynamic creative professional with several years of diverse, hands-on experience in the product and business development industry.
+
+                    Over the course of my career, I have worked across various sectors, consistently driving growth and delivering impactful solutions that align with both business goals and customer needs.
+
+                </p>
+            </div>
+
+            <!-- Resume Section -->
+            <section id="resume" class="resume">
+                <h2>Resume</h2>
+                <div class="resume-container">
+                    <p>View or download my complete resume to learn more about my experience and qualifications.</p>
+                    <a href="Resume.pdf" target="_blank" class="resume-button">
+                        <i class="fas fa-file-pdf"></i> Download Resume
+                    </a>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Toronto Metropolitan University</h3>
+                    <p>Business Technology Management, Bachelor of Commerce (2020 - Present)</p>
+                </div>
+                <div class="education-item">
+                </div>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Business Develeopment Advisor: Q Engineering (2020-Present).</li>
+                    <li>Chief Marketing Officer: EduTutor (2021-Present).</li>
+                    <li>Chief Partnership Outreach Officer: Pnyx Entertainment (2022-Present)</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Project Management: Experienced in managing IT projects, ensuring timely delivery while meeting budget and quality standards.</li>
+                    <li>Data Analysis: Proficient in analyzing data to extract meaningful insights, using tools like Excel and SQL to support decision-making processes.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
