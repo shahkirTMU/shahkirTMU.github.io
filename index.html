@@ -11,8 +11,14 @@
     <div class="container">
         <!-- Name Input Section -->
         <div class="name-input">
-            <input type="text" placeholder="Please enter your name!" autofocus>
+            <input type="text" placeholder="Please enter your name!">
             <!-- Welcome message will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Accessibility Buttons -->
+        <div class="accessibility-buttons">
+            <button id="increaseTextSize">Enlarge Text</button>
+            <button id="toggleColors">Toggle Colors</button>
         </div>
 
         <!-- Navigation -->
@@ -38,12 +44,21 @@
             <div class="profile-section">
                 <img src="me.jpg" alt="Shahkir Alkozai" class="profile-image">
                 <p class="intro-text">
-                    Hi, I'm Shahkir. I’m currently wrapping up my fifth and final year at Toronto Metropolitan University, where I’m enrolled in the Business Technology Management Co-op program. Over the course of my studies, I’ve gained a solid understanding of both business and technology, equipping me to help organizations use tech-driven solutions to solve business challenges. I am an innovative, results-oriented, and dynamic creative professional with several years of diverse, hands-on experience in the product and business development industry.
-
-                    Over the course of my career, I have worked across various sectors, consistently driving growth and delivering impactful solutions that align with both business goals and customer needs.
-
+                    Hi, I'm Shahkir. I’m currently wrapping up my fifth and final year at Toronto Metropolitan University, where I’m enrolled in the Business Technology Management Co-op program. Over the course of my studies, I’ve gained a solid understanding of both business and technology, equipping me to help organizations use tech-driven solutions to solve business challenges.
                 </p>
             </div>
+
+            <!-- Audio Section with Caption -->
+            <section class="media-section">
+                <h2>Audio Sample</h2>
+                <figure>
+                    <audio controls>
+                        <source src="sound.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Audio recording by Tomgrfer. (2022, September 25). The ting goes SKRRA (Big Shaq Meme Sound) Sound effect for edit. https://tuna.voicemod.net/sound/19a3ec84-7322-4eb9-9df1-c3ae7452ebe9</figcaption>
+                </figure>
+            </section>
 
             <!-- Resume Section -->
             <section id="resume" class="resume">
@@ -69,7 +84,7 @@
             <section class="experience">
                 <h2>Experience</h2>
                 <ul>
-                    <li>Business Develeopment Advisor: Q Engineering (2020-Present).</li>
+                    <li>Business Development Advisor: Q Engineering (2020-Present).</li>
                     <li>Chief Marketing Officer: EduTutor (2021-Present).</li>
                     <li>Chief Partnership Outreach Officer: Pnyx Entertainment (2022-Present)</li>
                 </ul>
@@ -82,6 +97,25 @@
                     <li>Data Analysis: Proficient in analyzing data to extract meaningful insights, using tools like Excel and SQL to support decision-making processes.</li>
                 </ul>
             </section>
+
+            <!-- Image Gallery with Alt-Text Button -->
+            <section class="gallery">
+                <h2>Image Gallery</h2>
+                <figure>
+                    <img src="bird.jpeg" alt="A vibrant green parrot perched on a branch, displaying its bright feathers with a mix of green and hints of blue.">
+                    <figcaption>Image taken on June 23, 2024, at Toronto, Canada.</figcaption>
+                </figure>
+                <figure>
+                    <img src="watches.jpeg" alt="An image of a luxurious gold watch with a polished, reflective metal surface.">
+                    <figcaption>Image taken on May 2, 2024, at Toronto, Canada.</figcaption>
+                </figure>
+                <figure>
+                    <img src="cheese.jpeg" alt="A block of white feta cheese, slightly crumbly in texture">
+                    <figcaption>Image taken on November 3, 2024, at Toronto, Canada.</figcaption>
+                </figure>
+                <button id="showAltText">Show Image Descriptions</button>
+            </section>
+            
         </main>
     </div>
 
